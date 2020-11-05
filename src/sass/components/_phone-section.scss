@@ -1,0 +1,72 @@
+.phone_section {
+  background: $color-main;
+  border-bottom: 6px solid $color-bottom-main;
+  &__wrapper {
+    padding: 54px 0 57px;
+    @include media-big-mobile {
+      padding: 20px 10px;
+    }
+  }
+}
+
+.left_arrow {
+  width: 16px;
+  height: 27px;
+  cursor: pointer;
+}
+
+.right_arrow {
+  width: 16px;
+  height: 27px;
+  cursor: pointer;
+}
+
+.layout-4-column_phones {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.phone-vertical {
+  background: no-repeat url(../../../src/images/phone-vertical-display.svg),
+    no-repeat url(../../../src/images/phone-vertical.svg),
+    no-repeat url(../../../src/images/phone-vertical-shadow.svg);
+  background-position: top 65px left 14.5px, 0 0, 0 0;
+  width: 240px;
+  height: 483px;
+  @include media-tablet {
+    width: 180.71px;
+    height: 363.67px;
+    background-size: 141.55px 250.73px, 162.36px 344.26px, 180.71px 363.67px;
+    background-position: top 49px left 11.06px, 0 0, 0 0;
+  }
+  @include media-big-mobile {
+    width: 88.24px;
+    height: 177.57px;
+    background-size: 69.12px 122.43px, 79.28px 168.1px, 88.24px 177.57px;
+    background-position: top 23.93px left 5.4px, 0 0, 0 0;
+  }
+}
+
+.phone_horizontal {
+  background: no-repeat url(../../../src/images/phone-horizontal-display.svg),
+    no-repeat url(../../../src/images/phone-horizontal.svg),
+    no-repeat url(../../../src/images/phone-horizontal-shadow.svg);
+  background-position: top 14.5px left 60px, 0 0, 0 0;
+  width: 483px;
+  height: 240px;
+  @include media-tablet {
+    width: 363.67px;
+    height: 180.71px;
+    background-size: 250.73px 141.55px, 344.26px 162.36px, 363.67px 180.71px;
+    background-position: top 11.14px left 45.72px, 0 0, 0 0;
+  }
+  @include media-big-mobile {
+    width: 177.57px;
+    height: 88.24px;
+    background-size: 122.43px 69.12px, 168.1px 79.28px, 177.57px 88.24px;
+    background-position: top 5.15px left 22.32px, 0 0, 0 0;
+  }
+}
